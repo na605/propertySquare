@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <title>Property Square | Home</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <!-- <link rel="stylesheet" href="https://www.youtube.com/redirect?v=ZeL2IL-dLuM&redir_token=5N8BDpGBIpdhhRDWUYeZUUcdKk58MTU0NTc4NDQwNEAxNTQ1Njk4MDA0&event=video_description&q=https%3A%2F%2Fmaxcdn.bootstrapcdn.com%2Ffont-awesome%2F4.7.0%2Fcss%2Ffont-awesome.min.css"> -->
+  </head>
+
+  <header>
+    <!-- <div class="nav-bar">
+      <nav>
+        <h1>PropertySquare</h1>
+        <div class="menu-icon">
+          <i class="fa fa-bars fa-2x"></i>
+        </div>
+
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">Buy</a></li>
+          <li><a href="#">Sell</a></li>
+          <li class="drop-down"><a href="#">Investment Strategies<i class="fa fa-sort-desc"></i></a>
+            <ul>
+                <li><a href="#">Fixed Return</a></li>
+                <li><a href="#">Capital Growth</a></li>
+            </ul>
+          </li>
+          <li class="drop-down"><a href="#">About Us<i class="fa fa-sort-desc"></i></a>
+            <ul>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">What we do</a></li>
+                <li><a href="#">Partners</a></li>
+            </ul>
+            </li>
+          <li class="contact-border"><a class="contact-border" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div> -->
+
+    <div class="topnav-bar">
+      <nav>
+        <!-- <a href="index.html"><img src="img/logo.png" alt=""Fresh Fitness "logo"> -->
+        <h1>PropertySquare</h1>
+        <div class="menu-icon">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#">How it works</a></li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">Investment Strategies</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">About Us</a></li>
+          <li class="contact-border"><a class="contact-border" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="home-slideshow">
+    <div class="slideshow-container">
+      <!-- <h1 class="slideshow">UK Based Property</h1> -->
+      <!-- <a href="" class="button button-accent">See Our Work</a> -->
+    </div>
+  </section>
+
+  <body>
+
+    <section class="intro">
+        <h2>Working With Investors to Achieve Their Financial Goals</h2>
+        <p> <br>Property Square is a property investment concierge service that delivers end to end support to both international and UK investors who are looking for capital growth, rental income or a fixed monthly return on their capital. Our real estate professionals work in partnership with a team of legal experts to manage your chosen project. Together we handle the financial issues, including funding and tax, source the right project, manage any required renovations and then return the property to market to achieve the optimum yield.</p>
+        <p>Our diligent and passionate team make investing in UK property a simple and secure process and are dedicated to building you a fabulous financial future. Whether you are a significant cash investor or simply have a modest deposit to get things started, we can help you to achieve outstanding results from UK property investment.</p>
+    </section>
+
+    <section class="inner-wrapper">
+      <aside id="about">
+         <img src="img/landscape1.jpg" alt="house">
+      </aside>
+      <article id="about">
+		     <h2>About</h2>
+	       <p>Find out about our organization, mission, our methods, and the results of our decades of advocacy.</p>
+         <a href=#>Learn More</a>
+  		</article>
+    </section>
+
+    <section class="inner-wrapper2">
+      <aside id="action">
+         <h2>Take action</h2>
+         <p>Ready to take the next step? You can become a contributor to our cause, or participate yourself.</p>
+         <a href=#>Find out How</a>
+      </aside>
+      <article id="action">
+         <img src="img/landscape1.jpg" alt="house">
+      </article>
+    </section>
+
+    <section class="newsletter">
+      <div class="subscribe-container">
+        <h1>Subscribe</h1>
+        <p>Join our mailing list to get the latest deals!</p>
+        <form action="usbwebserver/root/add_email.php">
+          <input type="email" name="email" placeholder="Email Address">
+          <button type="submit" class="button1">Join</button>
+        </form>
+      </div>
+    </section>
+
+  <footer>
+      <p> &copy; 2018 Copyright PropertySquare. All rights reserved.</p>
+  </footer>
+
+</body>
+
+  <script type="text/javascript">
+  //Menu toggle button
+    $(document).ready(function() {
+      $(".menu-icon").on("click", function() {
+        $("nav ul").toggleClass("show-menu");
+      });
+    });
+
+    // Scrolling effect
+    $(window).on("scroll",function() {
+      if($(window).scrollTop()){
+        $('nav').addClass('black');
+      }
+      else {
+        $('nav').removeClass('black');
+      }
+    })
+
+    // Active menu
+    $(document).on('click', 'nav ul li', function() {
+      $(this).addClass('active').siblings().removeClass('active');
+    })
+
+  </script>
+
+</html>
